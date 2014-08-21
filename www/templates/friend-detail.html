@@ -6,11 +6,26 @@
 -->
 <ion-view title="{{srType.code}}">
   <ion-content has-header="true" padding="true">
-    <div class="list srEvent"  ng-repeat="attribute in srType.attributes" >
-      <label class="item item-input item-stacked-label item-text-wrap">
+    <div class="list srEvent"  ng-repeat="attribute in srType.attributes | orderBy: srType.attribute.order" >
+      
+
+      <label class="item item-input item-stacked-label item-text-wrap" ng-if="attribute.datatype == 'CHAR'">
         <span class="input-label">{{attribute.description}}</span>
-        <input type="text" placeholder="John">
+        <input  type="text">
       </label>
+
+      <div ng-if="attribute.datatype == 'CHARLIST'">
+        <label class="item item-input item-stacked-label item-text-wrap">
+          <div class="input-label">
+            {{attribute.description}}
+          </div>
+        </label>
+        <div class="item item-input item-select item-text-wrap">
+            <select ng-model="mySelection" ng-options="value for value in attribute.values">
+            </select>
+        </div>
+
+      </div>
     </div>
   </ion-content>
 </ion-view>

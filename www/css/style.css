@@ -12,3 +12,9 @@
 .srEvent .input-label {
 	width: 100%;
 }
+
+.srEvent .item-select select {
+	width: 100%;
+	position: initial;
+	 max-width: 100%; 
+}

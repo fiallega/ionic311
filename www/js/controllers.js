@@ -12,7 +12,14 @@ angular.module('starter.controllers', [])
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, srService) {
     srService.getSRTypeConfig($stateParams.srCode).then(function(srTypeConfig){
+    
+    	angular.forEach(srTypeConfig.attributes, function (key, value) {
+    		if(key.values)
+    			key.values = key.values.slice(1,-1).split(",")
+    	});
+
     $scope.srType = srTypeConfig;  
+
   });
 })
 
