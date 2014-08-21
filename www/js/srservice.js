@@ -14,7 +14,7 @@ angular.module('starter.services')
 
         var urlBase = "http://mdcopen311v1.apiary-mock.com/:endPoint";
         var srResource = $resource(urlBase, 
-                                      {api_key:"",
+                                      {api_key:"ADD YOURS",
                                        ednPont: ""});
 
         function getAllSRTypes(){
@@ -39,11 +39,11 @@ angular.module('starter.services')
                           code:srType};
             var srPromise = srResource.get(params).$promise;
 
-            return srPromise.then(function(srTypes){
-                $log.debug("srService:getAllSRTypes: Success getting all srTypes", srTypes);
-                return srTypes;
+            return srPromise.then(function(srTypeConfig){
+                $log.debug("srService:getSRType: Success getting srType", srType, srTypeConfig);
+                return srTypeConfig;
             }, function(response){
-                $log.error("srService:getAllSRTypes: Error while getting all srTypes", response);
+                $log.error("srService:getSRType: Error while getting srType", response);
                 return $q.reject({error:response, message:response.message});
             });
 
@@ -52,6 +52,7 @@ angular.module('starter.services')
 
         // Public API
         return {
-            getAllSRTypes:getAllSRTypes
+            getAllSRTypes:getAllSRTypes,
+            getSRTypeConfig: getSRType
         };
     }]);

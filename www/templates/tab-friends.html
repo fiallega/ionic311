@@ -1,8 +1,8 @@
 <ion-view title="Report a Problem" class="mdc-background">
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-        {{friend.short_description}}
+      <ion-item ng-repeat="srType in srTypes" type="item-text-wrap" href="#/tab/friend/{{srType.code}}">
+        {{srType.short_description}}
       </ion-item>
     </ion-list>
   </ion-content>
