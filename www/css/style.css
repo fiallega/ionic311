@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.mdc-background {
+    background-image: url('../img/iphoneServiceDirectBg.png')
+}
+
+.logo {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url('../img/Icon-Small.png');
+}
