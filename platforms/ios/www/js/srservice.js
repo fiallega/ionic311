@@ -12,14 +12,15 @@
 angular.module('starter.services')
     .factory('srService', ['$resource', '$q', '$log', function ($resource, $q, $log) {
 
-        var urlBase = "http://miamidade.gov/mdc-open311/service_list.json";
+        var urlBase = "http://mdcopen311v1.apiary-mock.com/:endPoint";
         var srResource = $resource(urlBase, 
-                                      {api_key:"73f91ae4db90c7f4548f3652c7ef79c58dc0cb9b"});
+                                      {api_key:"ADD YOURS",
+                                       ednPont: ""});
 
         function getAllSRTypes(){
             $log.debug("srService:getAllSRTypes: About to get all SR types");
-            
-            var srPromise = srResource.query().$promise;
+            var params = {endPoint:"service_list.json"};
+            var srPromise = srResource.query(params).$promise;
 
             return srPromise.then(function(srTypes){
                 $log.debug("srService:getAllSRTypes: Success getting all srTypes", srTypes);
@@ -31,9 +32,27 @@ angular.module('starter.services')
 
         }
 
+        function getSRType(srType){
+            $log.debug("srService:getSRType: About to get an srType", srType);
+
+            var params = {endPoint:"service_definition.json",
+                          code:srType};
+            var srPromise = srResource.get(params).$promise;
+
+            return srPromise.then(function(srTypeConfig){
+                $log.debug("srService:getSRType: Success getting srType", srType, srTypeConfig);
+                return srTypeConfig;
+            }, function(response){
+                $log.error("srService:getSRType: Error while getting srType", response);
+                return $q.reject({error:response, message:response.message});
+            });
+
+        }
+
 
         // Public API
         return {
-            getAllSRTypes:getAllSRTypes
+            getAllSRTypes:getAllSRTypes,
+            getSRTypeConfig: getSRType
         };
     }]);

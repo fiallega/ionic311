@@ -50,6 +50,8 @@
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/app.js \
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/controllers.js \
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/services.js \
+/Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/sessionService.js \
+/Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/sr.js \
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/js/srservice.js \
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/lib/angular \
 /Users/fiallega/Projects/Experiments/ionic/tabsApp/platforms/android/assets/www/lib/angular-animate \

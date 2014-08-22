@@ -55,3 +55,27 @@
 2014-08-20 21:47:44.732 tabsApp[68258:70b] [CDVTimer][TotalPluginStartup] 1.864970ms
 2014-08-20 21:47:44.846 tabsApp[68258:70b] Resetting plugins due to page load.
 2014-08-20 21:47:45.331 tabsApp[68258:70b] Finished load of: file:///Users/fiallega/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F4C630A0-DBA5-4921-B4FC-3156FC78D63B/tabsApp.app/www/index.html#/tab/dash
+2014-08-22 12:44:57.907 tabsApp[74158:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-22 12:44:57.928 tabsApp[74158:70b] Unlimited access to network resources
+2014-08-22 12:44:58.105 tabsApp[74158:70b] [CDVTimer][keyboard] 0.068963ms
+2014-08-22 12:44:58.106 tabsApp[74158:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-22 12:44:58.106 tabsApp[74158:70b] [CDVTimer][statusbar] 0.403047ms
+2014-08-22 12:44:58.107 tabsApp[74158:70b] [CDVTimer][TotalPluginStartup] 1.577973ms
+2014-08-22 12:44:58.239 tabsApp[74158:70b] Resetting plugins due to page load.
+2014-08-22 12:44:58.692 tabsApp[74158:70b] Finished load of: file:///Users/fiallega/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F4C630A0-DBA5-4921-B4FC-3156FC78D63B/tabsApp.app/www/index.html#/tab/dash
+2014-08-22 12:50:23.003 tabsApp[74602:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-22 12:50:23.010 tabsApp[74602:70b] Unlimited access to network resources
+2014-08-22 12:50:23.027 tabsApp[74602:70b] [CDVTimer][keyboard] 0.069022ms
+2014-08-22 12:50:23.028 tabsApp[74602:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-22 12:50:23.028 tabsApp[74602:70b] [CDVTimer][statusbar] 0.454009ms
+2014-08-22 12:50:23.029 tabsApp[74602:70b] [CDVTimer][TotalPluginStartup] 1.438022ms
+2014-08-22 12:50:23.065 tabsApp[74602:70b] Resetting plugins due to page load.
+2014-08-22 12:50:23.953 tabsApp[74602:70b] Finished load of: file:///Users/fiallega/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F4C630A0-DBA5-4921-B4FC-3156FC78D63B/tabsApp.app/www/index.html#/tab/dash
+2014-08-22 12:54:44.107 tabsApp[74874:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-22 12:54:44.117 tabsApp[74874:70b] Unlimited access to network resources
+2014-08-22 12:54:44.140 tabsApp[74874:70b] [CDVTimer][keyboard] 0.102997ms
+2014-08-22 12:54:44.141 tabsApp[74874:70b] CDVPlugin class CDVStatusBar (pluginName: statusbar) does not exist.
+2014-08-22 12:54:44.142 tabsApp[74874:70b] [CDVTimer][statusbar] 0.580966ms
+2014-08-22 12:54:44.142 tabsApp[74874:70b] [CDVTimer][TotalPluginStartup] 1.953006ms
+2014-08-22 12:54:44.280 tabsApp[74874:70b] Resetting plugins due to page load.
+2014-08-22 12:54:44.631 tabsApp[74874:70b] Finished load of: file:///Users/fiallega/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/F4C630A0-DBA5-4921-B4FC-3156FC78D63B/tabsApp.app/www/index.html#/tab/dash
