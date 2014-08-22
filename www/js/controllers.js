@@ -20,6 +20,13 @@ angular.module('starter.controllers', [])
 
     $scope.srType = srTypeConfig;  
 
+    $scope.newSR
+
+
+    $scope.submit = function () {
+    	console.log($scope.newSR);
+    }
+
   });
 })
 
